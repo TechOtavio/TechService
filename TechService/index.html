@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="img/mouse2.png" />
+  <title>Tech Service</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark text-light">
+
+  <!-- Header com menu responsivo -->
+  <header class="bg-light fixed-top shadow-sm border-bottom">
+    <div class="container py-3 d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <img src="img/mouse2.png" alt="RMHtecnologia Logo" width="40" height="40" class="me-2 rounded" />
+        <span class="fs-4 fw-bold text-success">Tech Service</span>
+      </div>
+
+      <!-- Botão menu mobile -->
+      <button class="btn btn-outline-success d-md-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#menuMobile" aria-controls="menuMobile" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <!-- Menu desktop -->
+      <nav class="d-none d-md-flex gap-4 align-items-center">
+        <a href="#inicio" class="text-dark text-decoration-none hover">Início</a>
+        <a href="#servicos" class="text-dark text-decoration-none hover">Serviços</a>
+        <a href="#sobre" class="text-dark text-decoration-none hover">Sobre</a>
+        <a href="#contato" class="text-dark text-decoration-none hover">Contato</a>
+        <a href="https://wa.me/5585992865830?text=Oi%2C%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o." target="_blank" rel="noopener noreferrer" class="btn btn-success text-light px-4 hover">Fale Conosco</a>
+      </nav>
+    </div>
+
+    <!-- Menu mobile -->
+    <div class="collapse bg-light" id="menuMobile">
+      <div class="container d-flex flex-column py-3 gap-2">
+        <a href="#inicio" class="text-dark text-decoration-none">Início</a>
+        <a href="#servicos" class="text-dark text-decoration-none">Serviços</a>
+        <a href="#sobre" class="text-dark text-decoration-none">Sobre</a>
+        <a href="#contato" class="text-dark text-decoration-none">Contato</a>
+        <a href="https://wa.me/5585992865830?text=Oi%2C%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o." target="_blank" rel="noopener noreferrer" class="btn btn-success text-light px-4">Iniciar Projeto</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- section -->
+
+  <section id="inicio" class="pt-5 pb-4 bg-custom-gradient marg">
+    <div class="container px-4 py-5">
+      <div class="row align-items-center">
+        <!-- Texto à esquerda -->
+        <div class="col-lg-6 mb-5 mb-lg-0 fade-in">
+          <div class="d-flex align-items-center mb-3 text-success fw-medium">
+            <i class="bi bi-geo-alt-fill me-2"></i>
+            <span>Fortaleza, Ceará</span>
+          </div>
+
+          <h1 class="display-4 fw-bold text-dark mb-4 lh-sm">
+            Tecnologia Empresarial
+            <span class="d-block text-gradient">Segurança </span>
+            <span class="d-block fs-2">Soluções Inteligentes</span>
+          </h1>
+
+          <p class="lead text-muted mb-4">
+            A Tech Service é referência em segurança eletrônica, infraestrutura lógica,
+            microinformática e controle de acesso. Tecnologia e confiança para sua empresa crescer com segurança.
+          </p>
+
+          <div class="d-flex flex-column flex-sm-row gap-3 mb-4">
+            <a href="https://wa.me/5585992865830?text=Oi%2C%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o." target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-success text-white px-4 py-2">
+              Solicite um diagnóstico agora
+              <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+            <a href="#" class="btn btn-lg btn-outline-success px-4 py-2">
+              Ver Portfólio
+            </a>
+          </div>
+
+          <div class="d-flex align-items-center text-muted small">
+            <div class="d-flex align-items-center me-3">
+              <i class="bi bi-people-fill me-1"></i>
+              <span>Time de 5 especialistas</span>
+            </div>
+            <div class="rounded-circle bg-secondary me-2" style="width: 6px; height: 6px;"></div>
+            <span>Startup em crescimento</span>
+          </div>
+        </div>
+
+        <!-- Imagem à direita -->
+        <div class="col-lg-6 d-flex justify-content-center">
+          <div class="position-relative">
+            <div class="rounded-circle bg-custom-pulse position-absolute top-0 start-0 w-100 h-100"></div>
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <div class="position-relative">
+                <img src="img/imagem.png" alt="Team working" class="rounded-circle object-fit-cover"
+                  style="width: 320px; height: 320px;">
+                <div
+                  class="position-absolute top-0 start-0 w-100 h-100 rounded-circle bg-success opacity-25 mix-blend-overlay">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--section de serviços-->
+
+  <section id="servicos" class="py-5 bg-white">
+    <div class="container px-4 py-5">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-dark mb-3">
+          Nossos
+          <span class="text-gradient">Serviços</span>
+        </h2>
+        <p class="lead text-muted mx-auto" style="max-width: 800px;">
+          Oferecemos soluções completas para transformar sua empresa digitalmente,
+          desde o desenvolvimento até a estratégia de marketing.
+        </p>
+      </div>
+
+      <div class="row gy-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card border-0 shadow-sm h-100 hover-card">
+            <div class="card-body text-center">
+              <div class="icon-box mx-auto mb-3">
+                <i class="bi bi-camera-video text-white fs-4"></i>
+              </div>
+              <h5 class="fw-bold">Segurança Eletrônica (CFTV)</h5>
+              <p class="text-muted small">
+                Projetos personalizados de videomonitoramento com alta resolução.
+              </p>
+              <ul class="list-unstyled text-start small text-muted ps-3">
+                <li><span class="dot me-2"></span>Câmeras e Sensores</li>
+                <li><span class="dot me-2"></span>Instalação e Reparo</li>
+                <li><span class="dot me-2"></span>Proteção Perimetral</li>
+                <li><span class="dot me-2"></span>Video Analitico</li>
+                <li><span class="dot me-2"></span>Aplicativos de Controle</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card border-0 shadow-sm h-100 hover-card">
+            <div class="card-body text-center">
+              <div class="icon-box mx-auto mb-3">
+                <i class="bi bi-laptop text-white fs-4"></i>
+              </div>
+              <h5 class="fw-bold">Microinformática</h5>
+              <p class="text-muted small">
+                Assistência à solução de problemas e suporte tecnológico contínuos. Field Service e recursos de TI
+              </p>
+              <ul class="list-unstyled text-start small text-muted ps-3">
+                <li><span class="dot me-2"></span>Suporte Técnico</li>
+                <li><span class="dot me-2"></span>Gestão de Ativos de T.I</li>
+                <li><span class="dot me-2"></span>Consultoria de T.I</li>
+                <li><span class="dot me-2"></span>Reparo Manutenção</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card border-0 shadow-sm h-100 hover-card">
+            <div class="card-body text-center">
+              <div class="icon-box mx-auto mb-3">
+                <i class="bi bi-diagram-3 text-white fs-4"></i>
+              </div>
+              <h5 class="fw-bold">Infraestrutura Lógica</h5>
+              <p class="text-muted small">
+                Instalação e manutenção de redes estruturadas com performance garantida
+              </p>
+              <ul class="list-unstyled text-start small text-muted ps-3">
+                <li><span class="dot me-2"></span>Infraestrutura | Cabeamento</li>
+                <li><span class="dot me-2"></span>Cabeamento Estruturado</li>
+                <li><span class="dot me-2"></span>Montagem de Rack</li>
+                <li><span class="dot me-2"></span>Telecom</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card border-0 shadow-sm h-100 hover-card">
+            <div class="card-body text-center">
+              <div class="icon-box mx-auto mb-3">
+                <i class="bi bi-lock text-white fs-4"></i>
+              </div>
+              <h5 class="fw-bold">Controle de Acesso</h5>
+              <p class="text-muted small">
+                Sistemas modernos para controle de entrada e saída em empresas, condomínios e instituições.
+              </p>
+              <ul class="list-unstyled text-start small text-muted ps-3">
+                <li><span class="dot me-2"></span>Biometria</li>
+                <li><span class="dot me-2"></span>Sistema Integrado</li>
+                <li><span class="dot me-2"></span>Monitoramento</li>
+                <li><span class="dot me-2"></span>Auditoria</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section sobre -->
+
+  <section id="sobre" class="py-5 bg-custom-about-gradient">
+    <div class="container px-4 py-5">
+      <div class="row align-items-center g-5">
+        <!-- Texto -->
+        <div class="col-lg-6">
+          <h2 class="display-5 fw-bold text-dark mb-4">
+            Sobre a
+            <span class="d-block text-gradient">Tech Service</span>
+          </h2>
+          <p class="text-muted fs-5 mb-4">
+            Na Tech Service, oferecemos soluções completas para empresas que desejam proteger seus ativos, ampliar sua
+            infraestrutura tecnológica e garantir controle total de acesso. Com atuação alinhada às melhores práticas do
+            mercado nacional, garantimos qualidade, agilidade e excelência técnica.
+          </p>
+          <h4>
+            <span class="d-block text-gradient">Como podemos ajudar sua empresa?</span>
+          </h4>
+          <p class="text-muted fs-5 mb-4">
+            Desde a implantação completa de sistemas de vigilância, até a modernização da sua infraestrutura
+            tecnológica, a RMH é o parceiro ideal para dar suporte técnico, visão estratégica e segurança à sua
+            operação.
+          </p>
+
+          <div class="row text-center">
+            <div class="col-6">
+              <div class="fs-2 fw-bold text-success mb-1">15+</div>
+              <div class="text-muted">Projetos Entregues</div>
+            </div>
+            <div class="col-6">
+              <div class="fs-2 fw-bold text-success mb-1">5</div>
+              <div class="text-muted">Especialistas</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cartões com valores -->
+        <div class="col-lg-6">
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-6">
+              <div class="card h-100 shadow-sm hover-card border-0">
+                <div class="card-body">
+                  <div class="icon-box mb-3">
+                    <i class="bi bi-bullseye text-white fs-5"></i>
+                  </div>
+                  <h5 class="fw-semibold text-dark mb-2">Foco no Cliente</h5>
+                  <p class="text-muted small">Cada projeto é desenvolvido pensando nas necessidades específicas do
+                    cliente.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-6">
+              <div class="card h-100 shadow-sm hover-card border-0">
+                <div class="card-body">
+                  <div class="icon-box mb-3">
+                    <i class="bi bi-lightbulb text-white fs-5"></i>
+                  </div>
+                  <h5 class="fw-semibold text-dark mb-2">Inovação</h5>
+                  <p class="text-muted small">Utilizamos as mais modernas tecnologias para criar soluções únicas.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-6">
+              <div class="card h-100 shadow-sm hover-card border-0">
+                <div class="card-body">
+                  <div class="icon-box mb-3">
+                    <i class="bi bi-rocket-takeoff text-white fs-5"></i>
+                  </div>
+                  <h5 class="fw-semibold text-dark mb-2">Agilidade</h5>
+                  <p class="text-muted small">Entregamos projetos de qualidade dentro dos prazos estabelecidos.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-6">
+              <div class="card h-100 shadow-sm hover-card border-0">
+                <div class="card-body">
+                  <div class="icon-box mb-3">
+                    <i class="bi bi-heart-fill text-white fs-5"></i>
+                  </div>
+                  <h5 class="fw-semibold text-dark mb-2">Paixão</h5>
+                  <p class="text-muted small">Amamos o que fazemos e isso se reflete em cada linha de código.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- section contato -->
+
+<section id="contato" class="py-5 bg-white">
+  <div class="container px-4 py-5">
+    <div class="text-center mb-5">
+      <h2 class="display-5 fw-bold text-dark mb-3">
+        Entre em
+        <span class="text-gradient"> Contato</span>
+      </h2>
+      <p class="lead text-muted mx-auto" style="max-width: 700px;">
+        Pronto para transformar sua ideia em realidade? Entre em contato conosco 
+        e vamos conversar sobre seu próximo projeto.
+      </p>
+    </div>
+
+    <div class="row g-5">
+      <!-- Informações de contato -->
+      <div class="col-lg-6">
+        <h3 class="h4 fw-bold text-dark mb-4">Vamos conversar sobre seu projeto</h3>
+
+        <div class="d-flex align-items-start mb-4">
+          <div class="icon-box me-3">
+            <i class="bi bi-envelope-fill text-white fs-5"></i>
+          </div>
+          <div>
+            <h5 class="mb-1 fw-semibold text-muted">Email</h5>
+            <p class="text-muted">contato@nodsys.com.br</p>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-start mb-4">
+          <div class="icon-box me-3">
+            <i class="bi bi-telephone-fill text-white fs-5"></i>
+          </div>
+          <div>
+            <h5 class="mb-1 fw-semibold text-muted">Telefone</h5>
+            <p class="text-muted">(85) 99286-5830</p>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-start mb-4">
+          <div class="icon-box me-3">
+            <i class="bi bi-geo-alt-fill text-white fs-5"></i>
+          </div>
+          <div>
+            <h5 class="mb-1 fw-semibold text-muted ">Localização</h5>
+            <p class="text-muted">Fortaleza, Ceará</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulário -->
+      <div class="col-lg-6">
+        <div class="card border-0 shadow">
+          <div class="card-body p-4">
+            <h5 class="card-title fw-bold mb-4">Envie sua mensagem</h5>
+            <form>
+              <div class="row mb-3">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nome" required>
+                </div>
+                <div class="col">
+                  <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Empresa">
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control" placeholder="Telefone">
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="5" placeholder="Conte-nos sobre seu projeto..." required></textarea>
+              </div>
+              <button type="submit" class="btn w-100 text-white btn-gradient">
+                Enviar Mensagem
+                <i class="bi bi-send ms-2"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center mb-3">
+            <img src="img/mouse2.png" alt="Logo Tech Service" width="40" height="40" class="me-2 rounded">
+            <h4 class="mb-0">Tech Service</h4>
+          </div>
+          <p>Está pronto para evoluir com segurança?Entre em contato e <br> descubra como a RMH pode transformar o seu
+            ambiente corporativo.</p>
+          <p><i class="bi bi-geo-alt"></i> Fortaleza, Ceará - Brasil</p>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Serviços</h5>
+          <ul class="list-unstyled">
+            <li>Micro Informática</li>
+            <li>Consultoria em TI</li>
+            <li>CFTV e Segurança Eletrônica</li>
+            <li>Infraestrutura | Telecom | Rede Lógica</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Contato</h5>
+          <p><i class="bi bi-envelope"></i> contato@techservice.com.br</p>
+          <p><i class="bi bi-phone"></i> (85) 9 9286-5830</p>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-4" />
+
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-2 mb-md-0">© 2024 Tech Service. Todos os direitos reservados.</p>
+        <div class="d-flex align-items-center gap-3">
+          <span>Redes Sociais:</span>
+          <a href="https://g.co/kgs/JPGF1qS" target="_blank" class="text-light">
+            <i class="bi bi-google"></i>
+          </a>
+          <a href="https://www.instagram.com/RMHtecnologia/" target="_blank" class="text-light">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelector('form').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const nome = document.querySelector('input[placeholder="Nome"]').value;
+      const email = document.querySelector('input[placeholder="Email"]').value;
+      const empresa = document.querySelector('input[placeholder="Empresa"]').value;
+      const telefone = document.querySelector('input[placeholder="Telefone"]').value;
+      const mensagem = document.querySelector('textarea').value;
+
+      const resposta = await fetch('http://localhost:3000/enviar-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nome, email, empresa, telefone, mensagem })
+      });
+
+      const resultado = await resposta.json();
+
+      if (resultado.sucesso) {
+        alert('Mensagem enviada com sucesso!');
+      } else {
+        alert('Erro ao enviar. Tente novamente mais tarde.');
+      }
+    });
+  </script>
+
+</body>
+
+</html>

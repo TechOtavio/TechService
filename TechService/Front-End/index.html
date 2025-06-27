@@ -362,36 +362,42 @@
       </div>
 
       <!-- Formulário -->
-      <div class="col-lg-6">
-        <div class="card border-0 shadow">
-          <div class="card-body p-4">
-            <h5 class="card-title fw-bold mb-4">Envie sua mensagem</h5>
-            <form>
-              <div class="row mb-3">
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Nome" required>
-                </div>
-                <div class="col">
-                  <input type="email" class="form-control" placeholder="Email" required>
-                </div>
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Empresa">
-              </div>
-              <div class="mb-3">
-                <input type="tel" class="form-control" placeholder="Telefone">
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" rows="5" placeholder="Conte-nos sobre seu projeto..." required></textarea>
-              </div>
-              <button type="submit" class="btn w-100 text-white btn-gradient">
-                Enviar Mensagem
-                <i class="bi bi-send ms-2"></i>
-              </button>
-            </form>
+      <!-- Formulário -->
+<div class="col-lg-6">
+  <div class="card border-0 shadow">
+    <div class="card-body p-4">
+      <h5 class="card-title fw-bold mb-4">Envie sua mensagem</h5>
+      <form action="https://formsubmit.co/juliordg@gmail.com" method="POST">
+        <!-- Configurações do FormSubmit -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="obrigado.html">
+
+        <div class="row mb-3">
+          <div class="col">
+            <input type="text" class="form-control" name="nome" placeholder="Nome" required>
+          </div>
+          <div class="col">
+            <input type="email" class="form-control" name="email" placeholder="Email" required>
           </div>
         </div>
-      </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" name="empresa" placeholder="Empresa">
+        </div>
+        <div class="mb-3">
+          <input type="tel" class="form-control" name="telefone" placeholder="Telefone">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" name="mensagem" rows="5" placeholder="Conte-nos sobre seu projeto..." required></textarea>
+        </div>
+        <button type="submit" class="btn w-100 text-white btn-gradient">
+          Enviar Mensagem
+          <i class="bi bi-send ms-2"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
     </div>
   </div>
 </section>
@@ -447,31 +453,6 @@
 
   <!-- Bootstrap Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.querySelector('form').addEventListener('submit', async function (e) {
-      e.preventDefault();
-
-      const nome = document.querySelector('input[placeholder="Nome"]').value;
-      const email = document.querySelector('input[placeholder="Email"]').value;
-      const empresa = document.querySelector('input[placeholder="Empresa"]').value;
-      const telefone = document.querySelector('input[placeholder="Telefone"]').value;
-      const mensagem = document.querySelector('textarea').value;
-
-      const resposta = await fetch('http://localhost:3000/enviar-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nome, email, empresa, telefone, mensagem })
-      });
-
-      const resultado = await resposta.json();
-
-      if (resultado.sucesso) {
-        alert('Mensagem enviada com sucesso!');
-      } else {
-        alert('Erro ao enviar. Tente novamente mais tarde.');
-      }
-    });
-  </script>
 
 </body>
 
